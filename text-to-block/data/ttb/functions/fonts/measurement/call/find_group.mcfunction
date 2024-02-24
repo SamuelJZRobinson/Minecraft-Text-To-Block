@@ -1,0 +1,38 @@
+# Notes
+  # Do not modify anything in the measurements folder since it dynamically references values for any font.
+  # This script centralizes measurement retrieval to avoid redundancy in all fonts.
+  # It's impossible to access scores with custom named entities since they still use a UUID.
+  # Hyphen Newline is not an input char, must loop normal flow, and will trigger charID.
+  # Newline Char is an input char that needs removing, skips to place redstone, and won't trigger charId.
+
+# Set Default
+scoreboard players set charWidth stamper 0
+scoreboard players set newline stamper 0
+scoreboard players set ignoreFirstMove stamper 0
+
+# Place Character
+execute if score charID charParse matches 1..10 run function ttb:fonts/measurement/call/group1
+execute if score charID charParse matches 11..20 run function ttb:fonts/measurement/call/group2
+execute if score charID charParse matches 21..30 run function ttb:fonts/measurement/call/group3
+execute if score charID charParse matches 31..40 run function ttb:fonts/measurement/call/group4
+execute if score charID charParse matches 41..50 run function ttb:fonts/measurement/call/group5
+execute if score charID charParse matches 51..60 run function ttb:fonts/measurement/call/group6
+execute if score charID charParse matches 61..70 run function ttb:fonts/measurement/call/group7
+execute if score charID charParse matches 71..80 run function ttb:fonts/measurement/call/group8
+execute if score charID charParse matches 81..90 run function ttb:fonts/measurement/call/group9
+execute if score charID charParse matches 91..100 run function ttb:fonts/measurement/call/group10
+
+# Keep charWidth In Range
+execute if score charWidth stamper matches ..0 run scoreboard players set charWidth stamper 1
+
+# Check If Hyphenation Is Needed
+execute if score newline stamper matches 0 run function ttb:fonts/measurement/check_hyphen
+
+# Call Font Schematics
+execute if score newline stamper matches 0 run function ttb:fonts/measurement/get_font
+
+# Perform Newline
+  # Newline Char
+  execute if score newline stamper matches 2 as @e[type=minecraft:armor_stand,team=stamper,limit=1] run function ttb:stamp/move/goto_newline
+  # Hypenate
+  execute if score newline stamper matches 1 run function ttb:fonts/place_hyphen

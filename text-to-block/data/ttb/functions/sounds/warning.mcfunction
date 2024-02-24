@@ -1,0 +1,1 @@
+playsound minecraft:block.note_block.xylophone master @a ~ ~ ~ 1 0 1

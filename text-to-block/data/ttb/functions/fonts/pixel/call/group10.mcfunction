@@ -1,0 +1,6 @@
+execute if score charID charParse matches 91 run data modify block ~ ~ ~ name set value "minecraft:fonts/pixel/symbols/underscore"
+execute if score charID charParse matches 92 run data modify block ~ ~ ~ name set value "minecraft:fonts/pixel/symbols/backtick"
+execute if score charID charParse matches 93 run data modify block ~ ~ ~ name set value "minecraft:fonts/pixel/symbols/left_brace"
+execute if score charID charParse matches 94 run data modify block ~ ~ ~ name set value "minecraft:fonts/pixel/symbols/pipe"
+execute if score charID charParse matches 95 run data modify block ~ ~ ~ name set value "minecraft:fonts/pixel/symbols/right_brace"
+execute if score charID charParse matches 96 run data modify block ~ ~ ~ name set value "minecraft:fonts/pixel/symbols/tilde"

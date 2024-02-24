@@ -1,0 +1,10 @@
+execute if score charID charParse matches 31 run scoreboard players operation charWidth stamper = c fontLowercaseWidth
+execute if score charID charParse matches 32 run scoreboard players operation charWidth stamper = d fontLowercaseWidth
+execute if score charID charParse matches 33 run scoreboard players operation charWidth stamper = e fontLowercaseWidth
+execute if score charID charParse matches 34 run scoreboard players operation charWidth stamper = f fontLowercaseWidth
+execute if score charID charParse matches 35 run scoreboard players operation charWidth stamper = g fontLowercaseWidth
+execute if score charID charParse matches 36 run scoreboard players operation charWidth stamper = h fontLowercaseWidth
+execute if score charID charParse matches 37 run scoreboard players operation charWidth stamper = i fontLowercaseWidth
+execute if score charID charParse matches 38 run scoreboard players operation charWidth stamper = j fontLowercaseWidth
+execute if score charID charParse matches 39 run scoreboard players operation charWidth stamper = k fontLowercaseWidth
+execute if score charID charParse matches 40 run scoreboard players operation charWidth stamper = l fontLowercaseWidth

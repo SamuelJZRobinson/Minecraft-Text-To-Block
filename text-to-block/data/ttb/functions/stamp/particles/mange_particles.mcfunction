@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:armor_stand,team=stamper] at @s positioned ~ ~0.1 ~ run function ttb:stamp/particles/plot
