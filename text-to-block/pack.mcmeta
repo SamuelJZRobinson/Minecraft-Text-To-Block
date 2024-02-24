@@ -2,6 +2,6 @@
   "pack":
   {
     "pack_format": 10,
-    "description": "Writes 3D text onto floors."
+    "description": "Coverts text into 3D pixel art"
   }
 }

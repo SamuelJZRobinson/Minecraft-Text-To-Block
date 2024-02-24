@@ -1,9 +1,10 @@
 # Clear Controllers
-clear @a written_book{display:{Name:'{"text":"Stamper Controller"}'},title:"Controller",author:"BlackeyeI"} 1
+clear @a written_book{display:{Name:'{"text":"Stamp Controller"}'},title:"Controller",author:"BlackeyeI"} 1
 
+### Will need to fix this after
 # Scoreboards
 scoreboard objectives remove charParse
-scoreboard objectives remove stamper
+scoreboard objectives remove Stamp
 scoreboard objectives remove fontDraw
 scoreboard objectives remove fontInfo
 scoreboard objectives remove fontOtherWidth
@@ -14,22 +15,22 @@ scoreboard objectives remove fontSymbolWidth
 
 # Triggers
 function ttb:reset/disable_triggers
-scoreboard objectives remove alignStamperText
-scoreboard objectives remove killStamper
-scoreboard objectives remove rotateStamper
-scoreboard objectives remove spawnStamper
-scoreboard objectives remove startStamper
-scoreboard objectives remove teleportStamper
-scoreboard objectives remove uninstallStamper
+scoreboard objectives remove alignStampText
+scoreboard objectives remove killStamp
+scoreboard objectives remove rotateStamp
+scoreboard objectives remove spawnStamp
+scoreboard objectives remove startStamp
+scoreboard objectives remove teleportStamp
+scoreboard objectives remove uninstallStamp
 
 # Data Storage
 function ttb:reset/clear_datastorage
 
 # Armourstands
-kill @e[type=minecraft:armor_stand,team=stamper]
+kill @e[type=minecraft:armor_stand,team=Stamp]
 
 # Teams
-team remove stamper
+team remove Stamp
 
 # Status
 tellraw @a {"text":"Text To Block uninstalled.","bold":true}

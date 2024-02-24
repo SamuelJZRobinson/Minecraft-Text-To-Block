@@ -3,7 +3,7 @@
   # By default each structure must save characters from the baseline to the cap height for correct placements.
 
 # Reset Descend
-scoreboard players set descend stamper 0
+scoreboard players set descend Stamp 0
 
 # Place Structure Block
 execute if score charID charParse matches 3.. run setblock ~ ~ ~ structure_block{posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD",ignoreEntities:1b} replace

@@ -17,4 +17,4 @@ execute if score fontID fontDraw matches 1 run function ttb:fonts/pixel/head
 
 # Force Exception
 execute if score gotFont fontDraw matches 0 run data modify storage minecraft:messages message set value "Misconfigured or non-existent font."
-execute if score gotFont fontDraw matches 0 run function ttb:messages/raise_exception
+execute if score gotFont fontDraw matches 0 run function ttb:error_handling/raise_exception

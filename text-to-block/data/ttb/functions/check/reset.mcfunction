@@ -15,7 +15,7 @@ execute if score hasSymbols fontInfo matches 1 run data modify storage minecraft
 scoreboard players set bool charParse 1
 
 # Initial Move
-execute as @e[type=armor_stand,team=stamper,limit=1] run function ttb:stamp/move/init_move
+execute as @e[type=armor_stand,team=Stamp,limit=1] run function ttb:stamp/move/init_move
 
 # Proceed
 function ttb:check/set_char

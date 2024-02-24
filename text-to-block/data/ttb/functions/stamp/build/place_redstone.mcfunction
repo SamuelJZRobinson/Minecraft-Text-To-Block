@@ -7,11 +7,11 @@ execute if score charID charParse matches 3.. run setblock ^ ^ ^1 minecraft:reds
 # Reduce Input Length
 scoreboard players remove inputLength charParse 1
 
-# Move Stamper
-execute unless score newline stamper matches 2 if score inputLength charParse matches 1.. run function ttb:stamp/move/manage_move
+# Move Stamp
+execute unless score newline Stamp matches 2 if score inputLength charParse matches 1.. run function ttb:stamp/move/manage_move
 
 # Reset Newline Char
-scoreboard players set newline stamper 0
+scoreboard players set newline Stamp 0
 
 # Repeat Test Cycle
 schedule function ttb:check/set_char 1t replace

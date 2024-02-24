@@ -6,9 +6,9 @@
   # Newline Char is an input char that needs removing, skips to place redstone, and won't trigger charId.
 
 # Set Default
-scoreboard players set charWidth stamper 0
-scoreboard players set newline stamper 0
-scoreboard players set ignoreFirstMove stamper 0
+scoreboard players set charWidth Stamp 0
+scoreboard players set newline Stamp 0
+scoreboard players set ignoreFirstMove Stamp 0
 
 # Place Character
 execute if score charID charParse matches 1..10 run function ttb:fonts/measurement/call/group1
@@ -23,16 +23,16 @@ execute if score charID charParse matches 81..90 run function ttb:fonts/measurem
 execute if score charID charParse matches 91..100 run function ttb:fonts/measurement/call/group10
 
 # Keep charWidth In Range
-execute if score charWidth stamper matches ..0 run scoreboard players set charWidth stamper 1
+execute if score charWidth Stamp matches ..0 run scoreboard players set charWidth Stamp 1
 
 # Check If Hyphenation Is Needed
-execute if score newline stamper matches 0 run function ttb:fonts/measurement/check_hyphen
+execute if score newline Stamp matches 0 run function ttb:fonts/measurement/check_hyphen
 
 # Call Font Schematics
-execute if score newline stamper matches 0 run function ttb:fonts/measurement/get_font
+execute if score newline Stamp matches 0 run function ttb:fonts/measurement/get_font
 
 # Perform Newline
   # Newline Char
-  execute if score newline stamper matches 2 as @e[type=minecraft:armor_stand,team=stamper,limit=1] run function ttb:stamp/move/goto_newline
+  execute if score newline Stamp matches 2 as @e[type=minecraft:armor_stand,team=Stamp,limit=1] run function ttb:stamp/move/goto_newline
   # Hypenate
-  execute if score newline stamper matches 1 run function ttb:fonts/place_hyphen
+  execute if score newline Stamp matches 1 run function ttb:fonts/place_hyphen

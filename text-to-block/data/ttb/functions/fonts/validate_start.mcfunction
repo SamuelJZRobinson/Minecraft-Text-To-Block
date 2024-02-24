@@ -1,6 +1,6 @@
 # Reset Triggers
-scoreboard players reset @a startStamper
-scoreboard players enable @a startStamper
+scoreboard players reset @a startStamp
+scoreboard players enable @a startStamp
 
 # Check If Started
 execute if score isStarted charParse matches 1 run function ttb:fonts/already_started

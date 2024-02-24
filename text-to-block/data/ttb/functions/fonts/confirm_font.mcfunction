@@ -11,7 +11,7 @@ execute if score hasSymbols fontInfo matches 1 run scoreboard players set charse
 
 # Raise Exception
 execute if score charsetBlank fontDraw matches 1 run data modify storage minecraft:messages message set value "Font info file must use 1 or more charsets."
-execute if score charsetBlank fontDraw matches 1 run function ttb:messages/raise_exception
+execute if score charsetBlank fontDraw matches 1 run function ttb:error_handling/raise_exception
 
 # Caluclate Maaximum CharsetID
 scoreboard players set maxCharsetID charParse 2
@@ -27,4 +27,4 @@ scoreboard players operation newlineHeight fontInfo += descenderHeight fontInfo
 scoreboard players operation newlineHeight fontInfo += lineHeight fontDraw
 
 # Start Test Cycle
-execute if score doException charParse matches 0 run function ttb:check/reset
+execute if score doException Exception matches 0 run function ttb:check/reset
