@@ -1,3 +1,5 @@
+### Old
+
 # Custom Font Instructions
   # Validation
     # Admittedly I have not tried this with larger or smaller fonts so this is experimental.
@@ -18,24 +20,3 @@
     # 7) Open all group scripts in ttb:fonts/<font>/call/ and replace pixel references with a custom name using CTRL + H. It may help deleting unnecessary checks.
     # 8) Open ttb:fonts/get_font_info and reference the new fontID by incrementing it one higher than the previous ID.
     # 9) Open ttb:fonts/measurement/get_font and reference the new fontID.
-
-# Declare Charsets
-scoreboard players set hasUppercase fontInfo 1
-scoreboard players set hasLowercase fontInfo 1
-scoreboard players set hasNumbers fontInfo 1
-scoreboard players set hasSymbols fontInfo 1
-
-# Dimensions
-scoreboard players set capHeight fontInfo 5
-scoreboard players set avgCharWidth fontInfo 4
-scoreboard players set descenderHeight fontInfo 2
-
-# Char Width
-scoreboard players set whitespace fontOtherWidth 1
-execute if score hasUppercase fontInfo matches 1 run function ttb:fonts/pixel/uppercase
-execute if score hasLowercase fontInfo matches 1 run function ttb:fonts/pixel/lowercase
-execute if score hasNumbers fontInfo matches 1 run function ttb:fonts/pixel/numbers
-execute if score hasSymbols fontInfo matches 1 run function ttb:fonts/pixel/symbols
-
-# Confirm
-function ttb:fonts/confirm_font

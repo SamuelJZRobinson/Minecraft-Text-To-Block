@@ -1,3 +1,6 @@
+# Clear
+clear @s writable_book{stampController:1b}
+
 # Kill
 execute as @e[type=minecraft:armor_stand,team=Stamp] run kill @s
 

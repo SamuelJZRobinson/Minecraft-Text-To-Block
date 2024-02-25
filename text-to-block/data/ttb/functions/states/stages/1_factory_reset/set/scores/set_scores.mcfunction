@@ -8,15 +8,20 @@ scoreboard objectives add StampStatus dummy {"bold":true,"color":"white","text":
 scoreboard players set started StampStatus 0
 scoreboard players set state StampStatus 1
 scoreboard players set stampExists StampStatus 0
+scoreboard players set yaw StampStatus 180
 scoreboard players set xPosInit StampStatus 0
 scoreboard players set yPosInit StampStatus 0
 scoreboard players set zPosInit StampStatus 0
 scoreboard players set xPos StampStatus 0
+scoreboard players set yPos StampStatus 0
 scoreboard players set zPos StampStatus 0
 
 # STAMP SETTINGS
 scoreboard objectives add StampSettings dummy {"bold":true,"color":"white","text":"Stamp Settings"}
 scoreboard players set textAlign stampSettings 1
+
+
+
 
 # Char Parse
 scoreboard players set bool charParse 0
@@ -65,110 +70,3 @@ scoreboard objectives add fontInfo dummy {"bold":true,"color":"white","text":"Fo
   scoreboard players set hasLowercase fontInfo 0
   scoreboard players set hasNumbers fontInfo 1
   scoreboard players set hasSymbols fontInfo 0
-
-### This feels extremely redundant, resort to generic widths and heights. Maybe request read special dimensions when stamping not have redundant data?
-# FONT WIDTHS
-  # Other
-  scoreboard objectives add fontOtherWidth dummy {"bold":true,"color":"white","text":"Font Other Width"}
-  # Uppercase
-  scoreboard objectives add fontUppercaseWidth dummy {"bold":true,"color":"white","text":"Font Uppercase Width Info"}
-  scoreboard players set A fontUppercaseWidth 0
-  scoreboard players set B fontUppercaseWidth 0
-  scoreboard players set C fontUppercaseWidth 0
-  scoreboard players set D fontUppercaseWidth 0
-  scoreboard players set E fontUppercaseWidth 0
-  scoreboard players set F fontUppercaseWidth 0
-  scoreboard players set G fontUppercaseWidth 0
-  scoreboard players set H fontUppercaseWidth 0
-  scoreboard players set I fontUppercaseWidth 0
-  scoreboard players set J fontUppercaseWidth 0
-  scoreboard players set K fontUppercaseWidth 0
-  scoreboard players set L fontUppercaseWidth 0
-  scoreboard players set M fontUppercaseWidth 0
-  scoreboard players set N fontUppercaseWidth 0
-  scoreboard players set O fontUppercaseWidth 0
-  scoreboard players set P fontUppercaseWidth 0
-  scoreboard players set Q fontUppercaseWidth 0
-  scoreboard players set R fontUppercaseWidth 0
-  scoreboard players set S fontUppercaseWidth 0
-  scoreboard players set T fontUppercaseWidth 0
-  scoreboard players set U fontUppercaseWidth 0
-  scoreboard players set V fontUppercaseWidth 0
-  scoreboard players set W fontUppercaseWidth 0
-  scoreboard players set X fontUppercaseWidth 0
-  scoreboard players set Y fontUppercaseWidth 0
-  scoreboard players set Z fontUppercaseWidth 0
-  # Lowercase
-  scoreboard objectives add fontLowercaseWidth dummy {"bold":true,"color":"white","text":"Font Lowercase Width"}
-  scoreboard players set a fontLowercaseWidth 0
-  scoreboard players set b fontLowercaseWidth 0
-  scoreboard players set c fontLowercaseWidth 0
-  scoreboard players set d fontLowercaseWidth 0
-  scoreboard players set e fontLowercaseWidth 0
-  scoreboard players set f fontLowercaseWidth 0
-  scoreboard players set g fontLowercaseWidth 0
-  scoreboard players set h fontLowercaseWidth 0
-  scoreboard players set i fontLowercaseWidth 0
-  scoreboard players set j fontLowercaseWidth 0
-  scoreboard players set k fontLowercaseWidth 0
-  scoreboard players set l fontLowercaseWidth 0
-  scoreboard players set m fontLowercaseWidth 0
-  scoreboard players set n fontLowercaseWidth 0
-  scoreboard players set o fontLowercaseWidth 0
-  scoreboard players set p fontLowercaseWidth 0
-  scoreboard players set q fontLowercaseWidth 0
-  scoreboard players set r fontLowercaseWidth 0
-  scoreboard players set s fontLowercaseWidth 0
-  scoreboard players set t fontLowercaseWidth 0
-  scoreboard players set u fontLowercaseWidth 0
-  scoreboard players set v fontLowercaseWidth 0
-  scoreboard players set w fontLowercaseWidth 0
-  scoreboard players set x fontLowercaseWidth 0
-  scoreboard players set y fontLowercaseWidth 0
-  scoreboard players set z fontLowercaseWidth 0
-  # Numbers
-  scoreboard objectives add fontNumberWidth dummy {"bold":true,"color":"white","text":"Font Number Width"}
-  scoreboard players set 0 fontNumberWidth 0
-  scoreboard players set 1 fontNumberWidth 0
-  scoreboard players set 2 fontNumberWidth 0
-  scoreboard players set 3 fontNumberWidth 0
-  scoreboard players set 4 fontNumberWidth 0
-  scoreboard players set 5 fontNumberWidth 0
-  scoreboard players set 6 fontNumberWidth 0
-  scoreboard players set 7 fontNumberWidth 0
-  scoreboard players set 8 fontNumberWidth 0
-  scoreboard players set 9 fontNumberWidth 0
-  # Symbols
-  scoreboard objectives add fontSymbolWidth dummy {"bold":true,"color":"white","text":"Font Symbol Width"}
-  scoreboard players set ! fontSymbolWidth 0
-  scoreboard players set " fontSymbolWidth 0
-  scoreboard players set # fontSymbolWidth 0
-  scoreboard players set $ fontSymbolWidth 0
-  scoreboard players set % fontSymbolWidth 0
-  scoreboard players set & fontSymbolWidth 0
-  scoreboard players set ' fontSymbolWidth 0
-  scoreboard players set ( fontSymbolWidth 0
-  scoreboard players set ) fontSymbolWidth 0
-  scoreboard players set * fontSymbolWidth 0
-  scoreboard players set + fontSymbolWidth 0
-  scoreboard players set , fontSymbolWidth 0
-  scoreboard players set - fontSymbolWidth 0
-  scoreboard players set . fontSymbolWidth 0
-  scoreboard players set / fontSymbolWidth 0
-  scoreboard players set : fontSymbolWidth 0
-  scoreboard players set ; fontSymbolWidth 0
-  scoreboard players set < fontSymbolWidth 0
-  scoreboard players set = fontSymbolWidth 0
-  scoreboard players set > fontSymbolWidth 0
-  scoreboard players set ? fontSymbolWidth 0
-  scoreboard players set \@ fontSymbolWidth 0
-  scoreboard players set [ fontSymbolWidth 0
-  scoreboard players set \\ fontSymbolWidth 0
-  scoreboard players set ] fontSymbolWidth 0
-  scoreboard players set ^ fontSymbolWidth 0
-  scoreboard players set _ fontSymbolWidth 0
-  scoreboard players set ` fontSymbolWidth 0
-  scoreboard players set { fontSymbolWidth 0
-  scoreboard players set | fontSymbolWidth 0
-  scoreboard players set } fontSymbolWidth 0
-  scoreboard players set ~ fontSymbolWidth 0
