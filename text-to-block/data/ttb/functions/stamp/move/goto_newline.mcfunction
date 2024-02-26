@@ -7,7 +7,7 @@ scoreboard players set lineMoved Stamp 0
 execute if score newline Stamp matches 2 run scoreboard players set ignoreFirstMove Stamp 1
 
 # Get Newline Height
-scoreboard players operation posLine Stamp = newlineHeight fontInfo
+scoreboard players operation posLine Stamp = newlineHeight StampSettings
 scoreboard players operation posLine Stamp *= lineCount Stamp
 scoreboard players operation posLine Stamp *= MULTIPLIER Stamp
 
