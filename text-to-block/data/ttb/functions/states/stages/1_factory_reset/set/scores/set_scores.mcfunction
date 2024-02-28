@@ -41,10 +41,11 @@ scoreboard players set doLowercases StampFontInfo 0
 # CHARPARSE
 scoreboard objectives add StampCharParse dummy {"bold":true,"color":"white","text":"Stamp Char Parse"}
 # scoreboard players set bool StampCharParse 0
+scoreboard players set MAX_CHARID StampCharParse 0
 scoreboard players set charID StampCharParse 0
 scoreboard players set inputLength StampCharParse 0
+scoreboard players set noCharMatch StampCharParse 1
 ### scoreboard players set isCharsetBlank StampCharParse 0
-scoreboard players set maxCharsetID StampCharParse 0
 scoreboard players set charWidth StampCharParse 0
 
 # Stamp

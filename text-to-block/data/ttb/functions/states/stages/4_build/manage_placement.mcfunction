@@ -7,8 +7,9 @@
 
   # Input Not Blank
   execute store result score inputLength StampCharParse run data get storage minecraft:stamp input
-  execute if score inputLength StampCharParse matches 1 run scoreboard players set charID StampStatus 0
-  execute if score inputLength StampCharParse matches 1 run function ttb:states/stages/4_build/place/try_char
+  execute if score inputLength StampCharParse matches 1 run scoreboard players set charID StampCharParse 0
+  execute if score inputLength StampCharParse matches 1 run scoreboard players set noCharMatch StampCharParse 1
+  execute if score inputLength StampCharParse matches 1 run function ttb:states/stages/4_build/place/manage_char
   # If inputLength not ..0
     # end
 

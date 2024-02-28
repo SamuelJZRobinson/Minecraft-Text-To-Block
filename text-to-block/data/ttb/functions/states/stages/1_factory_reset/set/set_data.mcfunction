@@ -20,5 +20,8 @@ data modify storage minecraft:stamp charset append from storage minecraft:temp c
 data modify storage minecraft:stamp charset append from storage minecraft:temp charset.uppercase[]
 data modify storage minecraft:stamp charset append from storage minecraft:temp charset.lowercase[]
 
+# Count Charset Length
+execute store result score MAX_CHARID StampCharParse run data get storage minecraft:stamp charset
+
 # Clear Temp
 data remove storage minecraft:temp charset
