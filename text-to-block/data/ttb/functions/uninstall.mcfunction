@@ -3,7 +3,7 @@ clear @a written_book{display:{Name:'{"text":"Stamp Controller"}'},title:"Contro
 
 ### Will need to fix this after
 # Scoreboards
-scoreboard objectives remove StampFontParse
+scoreboard objectives remove StampCharParse
 scoreboard objectives remove Stamp
 scoreboard objectives remove fontDraw
 scoreboard objectives remove StampSettings

@@ -1,2 +1,2 @@
 # Allow Triggers
-scoreboard players set isStarted StampFontParse 0
+scoreboard players set isStarted StampCharParse 0

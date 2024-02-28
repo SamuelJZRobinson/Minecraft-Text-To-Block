@@ -2,8 +2,8 @@
 data remove storage minecraft:stamp input
 
 # Charpase
-data remove storage minecraft:StampFontParse check
-data remove storage minecraft:StampFontParse checkcopy
+data remove storage minecraft:StampCharParse check
+data remove storage minecraft:StampCharParse checkcopy
 # Charset
 ### data remove storage minecraft:charset other
 ### data remove storage minecraft:charset uppercase

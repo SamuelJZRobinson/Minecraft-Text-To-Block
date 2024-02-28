@@ -12,24 +12,26 @@ scoreboard players set yaw StampStatus 180
 scoreboard players set xPosInit StampStatus 0
 scoreboard players set yPosInit StampStatus 0
 scoreboard players set zPosInit StampStatus 0
-scoreboard players set xPos StampStatus 0
-scoreboard players set yPos StampStatus 0
-scoreboard players set zPos StampStatus 0
+# scoreboard players set xPos StampStatus 0
+# scoreboard players set yPos StampStatus 0
+# scoreboard players set zPos StampStatus 0
 scoreboard players set lineCount StampStatus 0
 scoreboard players set lineTravelLength StampStatus 0
+scoreboard players set NEGATIVE_FLIP StampStatus -1
 
 # SETTINGS
 scoreboard objectives add StampSettings dummy {"bold":true,"color":"white","text":"Stamp Settings"}
-scoreboard players set lineCharLimit StampSettings 128
-scoreboard players set detectCollisions StampSettings 1
+scoreboard players set lineDistanceLimit StampSettings 128
+scoreboard players set checkCollisions StampSettings 1
 scoreboard players set CHAR_SPACING StampSettings 1
 scoreboard players set textAlign StampSettings 2
-scoreboard players set lineHeight StampSettings 1
+scoreboard players set lineHeight StampFontInfo 1
 
 # FONT INFO
 scoreboard objectives add StampFontInfo dummy {"bold":true,"color":"white","text":"Stamp Font Info"}
 scoreboard players set capHeight StampFontInfo 5
 scoreboard players set avgCharWidth StampSettings 4
+# scoreboard players set descenderHeight StampSettings 1
 # Declare Subsets
 scoreboard players set doSymbols StampFontInfo 0
 scoreboard players set doNumbers StampFontInfo 0
@@ -37,13 +39,13 @@ scoreboard players set doUppercases StampFontInfo 0
 scoreboard players set doLowercases StampFontInfo 0
 
 # CHARPARSE
-scoreboard objectives add StampFontParse dummy {"bold":true,"color":"white","text":"Stamp Char Parse"}
-# scoreboard players set bool StampFontParse 0
-scoreboard players set charID StampFontParse 0
-scoreboard players set inputLength StampFontParse 0
-### scoreboard players set isCharsetBlank StampFontParse 0
-scoreboard players set maxCharsetID StampFontParse 0
-scoreboard players set charWidth StampFontParse 0
+scoreboard objectives add StampCharParse dummy {"bold":true,"color":"white","text":"Stamp Char Parse"}
+# scoreboard players set bool StampCharParse 0
+scoreboard players set charID StampCharParse 0
+scoreboard players set inputLength StampCharParse 0
+### scoreboard players set isCharsetBlank StampCharParse 0
+scoreboard players set maxCharsetID StampCharParse 0
+scoreboard players set charWidth StampCharParse 0
 
 # Stamp
 # scoreboard objectives add Stamp dummy {"bold":true,"color":"white","text":"Stamp"}
@@ -75,5 +77,5 @@ scoreboard objectives add StampSettings dummy {"bold":true,"color":"white","text
   
   
   # scoreboard players set currentCharWidth StampSettings 0
-  scoreboard players set descenderHeight StampSettings 1
-  scoreboard players set newlineHeight StampSettings 5
+  
+  # scoreboard players set newlineHeight StampStatusFontInfo 5

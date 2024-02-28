@@ -14,17 +14,17 @@ execute if score charsetBlank fontDraw matches 1 run data modify storage minecra
 execute if score charsetBlank fontDraw matches 1 run function ttb:error_handling/raise_exception
 
 # Caluclate Maaximum CharsetID
-scoreboard players set maxCharsetID StampFontParse 2
-execute if score doUppercase StampSettings matches 1 run scoreboard players set maxCharsetID StampFontParse 28
-execute if score doLowercase StampSettings matches 1 run scoreboard players set maxCharsetID StampFontParse 54
-execute if score doNumbers StampSettings matches 1 run scoreboard players set maxCharsetID StampFontParse 64
-execute if score doSymbols StampSettings matches 1 run scoreboard players set maxCharsetID StampFontParse 96
-scoreboard players add maxCharsetID StampFontParse 1
+scoreboard players set maxCharsetID StampCharParse 2
+execute if score doUppercase StampSettings matches 1 run scoreboard players set maxCharsetID StampCharParse 28
+execute if score doLowercase StampSettings matches 1 run scoreboard players set maxCharsetID StampCharParse 54
+execute if score doNumbers StampSettings matches 1 run scoreboard players set maxCharsetID StampCharParse 64
+execute if score doSymbols StampSettings matches 1 run scoreboard players set maxCharsetID StampCharParse 96
+scoreboard players add maxCharsetID StampCharParse 1
 
 # Calculate Newline Height
-scoreboard players operation newlineHeight StampSettings = capHeight StampSettings
-scoreboard players operation newlineHeight StampSettings += descenderHeight StampSettings
-scoreboard players operation newlineHeight StampSettings += lineHeight fontDraw
+scoreboard players operation newlineHeight StampStatusFontInfo = capHeight StampSettings
+scoreboard players operation newlineHeight StampStatusFontInfo += descenderHeight StampSettings
+scoreboard players operation newlineHeight StampStatusFontInfo += lineHeight fontDraw
 
 # Start Test Cycle
 execute if score doException Exception matches 0 run function ttb:check/reset

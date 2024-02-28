@@ -5,11 +5,11 @@
   # Scheduling ttb:check/match prevents unwanted script repeats.
 
 # Copy First Char Backup For Testing
-data modify storage minecraft:StampFontParse check set from storage minecraft:StampFontParse checkcopy
+data modify storage minecraft:StampCharParse check set from storage minecraft:StampCharParse checkcopy
 
 # Test For Matching Characters In checkcopy and charsettest
-execute store success score bool StampFontParse run data modify storage minecraft:StampFontParse check set from storage charsetunique charsettest[0]
+execute store success score bool StampCharParse run data modify storage minecraft:StampCharParse check set from storage charsetunique charsettest[0]
 
 # Loop
-execute if score bool StampFontParse matches 1 run function ttb:check/no_match
-execute if score bool StampFontParse matches 0 run schedule function ttb:check/match 1t replace
+execute if score bool StampCharParse matches 1 run function ttb:check/no_match
+execute if score bool StampCharParse matches 0 run schedule function ttb:check/match 1t replace

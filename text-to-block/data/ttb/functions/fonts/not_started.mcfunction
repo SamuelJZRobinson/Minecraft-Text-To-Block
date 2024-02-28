@@ -9,15 +9,15 @@ execute if score lineHeight fontDraw matches 6.. run scoreboard players set line
 execute store result score stampExists StampStatus if entity @e[type=minecraft:armor_stand,team=Stamp,limit=1]
 
 # Get Input Array Length
-execute store result score inputLength StampFontParse run data get storage minecraft:StampFontParse input
+execute store result score inputLength StampCharParse run data get storage minecraft:StampCharParse input
 
 # Raise Exceptions
   # No Stamp
   execute if score stampExists StampStatus matches 0 run data modify storage minecraft:messages message set value "Must place the Stamp."
   execute if score stampExists StampStatus matches 0 run function ttb:error_handling/raise_exception
   # Blank Input
-  execute if score inputLength StampFontParse matches ..0 run data modify storage minecraft:messages message set value "Input array needs 1 or more items."
-  execute if score inputLength StampFontParse matches ..0 run function ttb:error_handling/raise_exception
+  execute if score inputLength StampCharParse matches ..0 run data modify storage minecraft:messages message set value "Input array needs 1 or more items."
+  execute if score inputLength StampCharParse matches ..0 run function ttb:error_handling/raise_exception
 
 # Proceed
 execute if score doException Exception matches 0 run function ttb:fonts/get_font_info
