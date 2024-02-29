@@ -3,13 +3,12 @@
   execute if score lineDistance StampStatus >= lineDistanceLimit StampSettings run function ttb:states/stages/4_build/move/goto_newline
 
   # Air Ahead
-  execute if score checkCollisions StampSettings matches 1 run function ttb:states/stages/4_build/move/check_collisions
+  execute if score checkCollisions StampSettings matches 1 run function ttb:states/stages/4_build/check/check_collisions
 
   # Input Not Blank
   execute store result score inputLength StampCharParse run data get storage minecraft:stamp input
-  execute if score inputLength StampCharParse matches 1 run scoreboard players set charID StampCharParse 0
-  execute if score inputLength StampCharParse matches 1 run scoreboard players set noCharMatch StampCharParse 1
-  execute if score inputLength StampCharParse matches 1 run function ttb:states/stages/4_build/place/manage_char
+  execute if score inputLength StampCharParse matches 1 run function ttb:states/stages/4_build/check/check_not_empty
+
   # If inputLength not ..0
     # end
 

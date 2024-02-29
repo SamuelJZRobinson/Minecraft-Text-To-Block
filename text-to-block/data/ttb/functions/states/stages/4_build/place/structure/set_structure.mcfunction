@@ -12,14 +12,14 @@
 # Set Char Height
   # Set Default
   scoreboard players set charHeightMod Stamp 0
-  execute if score direction Stamp matches 0..4 unless score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp -= capHeight StampSettings
-  execute if score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp += capHeight StampSettings
+  execute if score direction Stamp matches 0..4 unless score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp -= totalHeight StampSettings
+  execute if score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp += totalHeight StampSettings
   # Offset To Remove Redstone
   execute if score direction Stamp matches 0..4 unless score direction Stamp matches 1..2 run scoreboard players add charHeightMod Stamp 1
   execute if score direction Stamp matches 1..2 run scoreboard players remove charHeightMod Stamp 1
   # Offset Descender
-  execute if score descend Stamp matches 1 if score direction Stamp matches 0..4 unless score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp -= descenderHeight StampSettings
-  execute if score descend Stamp matches 1 if score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp += descenderHeight StampSettings
+  execute if score descend Stamp matches 1 if score direction Stamp matches 0..4 unless score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp -= xHeight StampSettings
+  execute if score descend Stamp matches 1 if score direction Stamp matches 1..2 run scoreboard players operation charHeightMod Stamp += xHeight StampSettings
 
 # Set Structure Block
 execute if score direction Stamp matches 0 run function ttb:fonts/set_structure_north

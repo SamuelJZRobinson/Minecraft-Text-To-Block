@@ -22,8 +22,8 @@ execute if score doSymbols StampSettings matches 1 run scoreboard players set ma
 scoreboard players add maxCharsetID StampCharParse 1
 
 # Calculate Newline Height
-scoreboard players operation newlineHeight StampStatusFontInfo = capHeight StampSettings
-scoreboard players operation newlineHeight StampStatusFontInfo += descenderHeight StampSettings
+scoreboard players operation newlineHeight StampStatusFontInfo = totalHeight StampSettings
+scoreboard players operation newlineHeight StampStatusFontInfo += xHeight StampSettings
 scoreboard players operation newlineHeight StampStatusFontInfo += lineHeight fontDraw
 
 # Start Test Cycle

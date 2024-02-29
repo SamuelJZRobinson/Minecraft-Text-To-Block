@@ -16,7 +16,7 @@
     # 3) Duplicate the ttb:fonts/pixel template folder and give it the same unique name.
     # 4) Open ttb:fonts/pixel/head (this script) and declare what charsets the font will display with 1 (true) or 0 (false).
     # 5) Save required character structures in <map>/generated/minecraft/structures/fonts/<font>.
-    # 6) Adjust general dimensions and individual character widths. Consider saving time by setting the same character widths to avgCharWidth.
+    # 6) Adjust general dimensions and individual character widths. Consider saving time by setting the same character widths to avgWidth.
     # 7) Open all group scripts in ttb:fonts/<font>/call/ and replace pixel references with a custom name using CTRL + H. It may help deleting unnecessary checks.
     # 8) Open ttb:fonts/get_font_info and reference the new fontID by incrementing it one higher than the previous ID.
     # 9) Open ttb:fonts/measurement/get_font and reference the new fontID.

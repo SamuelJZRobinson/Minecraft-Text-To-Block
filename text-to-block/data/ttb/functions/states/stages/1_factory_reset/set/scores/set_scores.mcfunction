@@ -12,9 +12,6 @@ scoreboard players set yaw StampStatus 180
 scoreboard players set xPosInit StampStatus 0
 scoreboard players set yPosInit StampStatus 0
 scoreboard players set zPosInit StampStatus 0
-# scoreboard players set xPos StampStatus 0
-# scoreboard players set yPos StampStatus 0
-# scoreboard players set zPos StampStatus 0
 scoreboard players set lineCount StampStatus 0
 scoreboard players set lineTravelLength StampStatus 0
 scoreboard players set NEGATIVE_FLIP StampStatus -1
@@ -25,13 +22,13 @@ scoreboard players set lineDistanceLimit StampSettings 128
 scoreboard players set checkCollisions StampSettings 1
 scoreboard players set CHAR_SPACING StampSettings 1
 scoreboard players set textAlign StampSettings 2
-scoreboard players set lineHeight StampFontInfo 1
 
 # FONT INFO
 scoreboard objectives add StampFontInfo dummy {"bold":true,"color":"white","text":"Stamp Font Info"}
-scoreboard players set capHeight StampFontInfo 5
-scoreboard players set avgCharWidth StampSettings 4
-# scoreboard players set descenderHeight StampSettings 1
+scoreboard players set avgWidth StampFontInfo 0
+scoreboard players set totalHeight StampFontInfo 0
+scoreboard players set xHeight StampFontInfo 0
+scoreboard players set fontExists StampFontInfo 0
 # Declare Subsets
 scoreboard players set doSymbols StampFontInfo 0
 scoreboard players set doNumbers StampFontInfo 0
@@ -48,35 +45,9 @@ scoreboard players set noCharMatch StampCharParse 1
 ### scoreboard players set isCharsetBlank StampCharParse 0
 scoreboard players set charWidth StampCharParse 0
 
-# Stamp
-# scoreboard objectives add Stamp dummy {"bold":true,"color":"white","text":"Stamp"}
-# scoreboard players set charWidthMod Stamp 0
-# execute unless score direction Stamp matches 0..3 run scoreboard players set direction Stamp 0
-# execute unless score direction Stamp matches 0..3 as @e[type=minecraft:armor_stand,team=Stamp,limit=1] at @s run tp @s ~ ~ ~ -180 0
-# scoreboard players set descend Stamp 0
-# scoreboard players set ignoreFirstMove Stamp 0
-# scoreboard players set lineLeft Stamp 0
-# scoreboard players set lineMoved Stamp 0
-# scoreboard players set lineCount Stamp 0
-# scoreboard players set MOVE_LIMIT Stamp 80
-# scoreboard players set MULTIPLIER Stamp 10
-# scoreboard players set newline Stamp 0
-# execute unless entity @e[type=minecraft:armor_stand,team=Stamp,limit=1] run scoreboard players set stampExists StampStatus 0
-# scoreboard players set posLine Stamp 0
-
 # FONT DRAW
 scoreboard objectives add fontDraw dummy {"bold":true,"color":"white","text":"Font Draw"}
   # Font
   scoreboard players set charsetBlank fontDraw 1
   scoreboard players set fontID fontDraw -1
   scoreboard players set gotFont fontDraw 1
-  
-
-# FONT INFO
-scoreboard objectives add StampSettings dummy {"bold":true,"color":"white","text":"Font Info"}
-  # Dimensions
-  
-  
-  # scoreboard players set currentCharWidth StampSettings 0
-  
-  # scoreboard players set newlineHeight StampStatusFontInfo 5

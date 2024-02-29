@@ -1,5 +1,3 @@
-### Ensure scoreboards are adjusted correctly, placeholders in effect
-
 # Width 1
 execute if score char x matches 4 run scoreboard players set charWidth y 1
 execute if score char x matches 17 run scoreboard players set charWidth y 1
