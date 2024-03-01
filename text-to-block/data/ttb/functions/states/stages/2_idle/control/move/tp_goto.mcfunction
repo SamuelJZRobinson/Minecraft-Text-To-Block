@@ -6,3 +6,6 @@ execute store result storage minecraft:tp input.z int 1 run scoreboard players g
 
 # TP
 execute if score stampExists StampStatus matches 1 run function ttb:utility/tp/tp_data_absolute with storage minecraft:tp input
+
+# Sound
+function ttb:sounds/enderman_tp

@@ -6,5 +6,5 @@ execute store result storage minecraft:stamp charID{}.charID int 1 run scoreboar
 function ttb:states/stages/4_build/check/check_chartest with storage minecraft:stamp charID
 
 # Loop
-execute if score nonoCharMatch StampCharParse matches 1 if score charID StampCharParse < MAX_CHARID StampCharParse run function ttb:states/stages/4_build/manage_char
+execute if score nonoCharMatch StampCharParse matches 1 if score charID StampCharParse < MAX_CHAR_ID StampCharParse run function ttb:states/stages/4_build/manage_char
 execute if score nonoCharMatch StampCharParse matches 0 run function ttb:states/stages/4_build/place/place_char

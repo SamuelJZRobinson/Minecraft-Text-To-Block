@@ -6,8 +6,8 @@ data remove storage minecraft:StampCharParse check
 
 # Copy Charsets That The Font Supports
 data modify storage minecraft:charsetunique charset set from storage minecraft:charset other
-execute if score doUppercase StampSettings matches 1 run data modify storage minecraft:charsetunique charset append from storage minecraft:charset uppercase[]
-execute if score doLowercase StampSettings matches 1 run data modify storage minecraft:charsetunique charset append from storage minecraft:charset lowercase[]
+execute if score doUppercases StampSettings matches 1 run data modify storage minecraft:charsetunique charset append from storage minecraft:charset uppercase[]
+execute if score doLowercases StampSettings matches 1 run data modify storage minecraft:charsetunique charset append from storage minecraft:charset lowercase[]
 execute if score doNumbers StampSettings matches 1 run data modify storage minecraft:charsetunique charset append from storage minecraft:charset numbers[]
 execute if score doSymbols StampSettings matches 1 run data modify storage minecraft:charsetunique charset append from storage minecraft:charset symbols[]
 

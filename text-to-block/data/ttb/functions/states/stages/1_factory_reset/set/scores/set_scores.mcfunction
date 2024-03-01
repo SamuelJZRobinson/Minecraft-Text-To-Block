@@ -29,6 +29,7 @@ scoreboard players set avgWidth StampFontInfo 0
 scoreboard players set totalHeight StampFontInfo 0
 scoreboard players set xHeight StampFontInfo 0
 scoreboard players set fontExists StampFontInfo 0
+scoreboard players set charsetsEnabled StampFontInfo 0
 # Declare Subsets
 scoreboard players set doSymbols StampFontInfo 0
 scoreboard players set doNumbers StampFontInfo 0
@@ -38,7 +39,7 @@ scoreboard players set doLowercases StampFontInfo 0
 # CHARPARSE
 scoreboard objectives add StampCharParse dummy {"bold":true,"color":"white","text":"Stamp Char Parse"}
 # scoreboard players set bool StampCharParse 0
-scoreboard players set MAX_CHARID StampCharParse 0
+scoreboard players set MAX_CHAR_ID StampCharParse 0
 scoreboard players set charID StampCharParse 0
 scoreboard players set inputLength StampCharParse 0
 scoreboard players set noCharMatch StampCharParse 1

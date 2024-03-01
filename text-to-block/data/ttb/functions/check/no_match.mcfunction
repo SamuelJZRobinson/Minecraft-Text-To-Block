@@ -10,11 +10,11 @@ data remove storage minecraft:charsetunique charsettest[0]
 # Increment charID
 scoreboard players add charID StampCharParse 1
 # A-Z
-execute if score doUppercase StampSettings matches 0 if score charID StampCharParse matches 3..28 run say @p "skip set1"
-execute if score doUppercase StampSettings matches 0 if score charID StampCharParse matches 3..28 run scoreboard players set charID StampCharParse 29
+execute if score doUppercases StampSettings matches 0 if score charID StampCharParse matches 3..28 run say @p "skip set1"
+execute if score doUppercases StampSettings matches 0 if score charID StampCharParse matches 3..28 run scoreboard players set charID StampCharParse 29
 # a-z
-execute if score doLowercase StampSettings matches 0 if score charID StampCharParse matches 29..54 run say @p "skip set2"
-execute if score doLowercase StampSettings matches 0 if score charID StampCharParse matches 29..54 run scoreboard players set charID StampCharParse 55
+execute if score doLowercases StampSettings matches 0 if score charID StampCharParse matches 29..54 run say @p "skip set2"
+execute if score doLowercases StampSettings matches 0 if score charID StampCharParse matches 29..54 run scoreboard players set charID StampCharParse 55
 # 0-9
 execute if score doNumbers StampSettings matches 0 if score charID StampCharParse matches 55..64 run say @p "skip set3"
 execute if score doNumbers StampSettings matches 0 if score charID StampCharParse matches 55..64 run scoreboard players set charID StampCharParse 65
