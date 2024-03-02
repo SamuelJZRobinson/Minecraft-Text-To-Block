@@ -2,7 +2,7 @@
 clear @a written_book{stampControl:1b}
 
 # Scoreboards
-scoreboard objectives remove StampCharParse
+scoreboard objectives remove StampFont
 scoreboard objectives remove Stamp
 scoreboard objectives remove fontDraw
 scoreboard objectives remove StampSettings

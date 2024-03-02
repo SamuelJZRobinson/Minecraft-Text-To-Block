@@ -7,3 +7,5 @@ function ttb:states/stages/4_build/tests/test_input_not_empty
 
 # Approve
 execute if score testsFailed Exception matches 0 run function ttb:states/stages/4_build/tests/approve
+
+### Reject

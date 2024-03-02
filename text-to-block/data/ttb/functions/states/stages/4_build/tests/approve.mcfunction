@@ -1,9 +1,13 @@
+tellraw @a "Approve"
+
+### Still need a way to skip subsets if they are disabled
+
 # Set Scores
-scoreboard players set charID StampCharParse 0
-scoreboard players set noCharMatch StampCharParse 1
+scoreboard players set charID StampFont 0
+scoreboard players set noCharMatch StampFont 1
 
-# Newline
-execute if score lineDistance StampStatus >= lineDistanceLimit StampSettings run function ttb:states/stages/4_build/move/move_newline
+# Goto Newline
+execute if score lineDistance StampStatus >= lineDistanceLimit StampSettings run function ttb:states/stages/4_build/place/move/move_newline
 
-# Check Next Char
-function ttb:states/stages/4_build/check/check_char_loop
+# Check Char
+function ttb:states/stages/4_build/check/check_char
