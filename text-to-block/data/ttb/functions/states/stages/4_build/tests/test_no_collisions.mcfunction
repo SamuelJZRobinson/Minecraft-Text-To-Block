@@ -19,3 +19,7 @@ execute if score fontAxis StampSettings matches 2 run
 # If collision StampStatus 1
   # Exception "Stamp stopped, collision imminent"
     # Could kill script or wait until manual approval to try again?
+
+# Exception
+execute if score stampExists StampStatus matches 1 run data modify storage messages message set value "Cannot reset, stamp exists!"
+execute if score stampExists StampStatus matches 1 run function ttb:error_handling/raise_warning

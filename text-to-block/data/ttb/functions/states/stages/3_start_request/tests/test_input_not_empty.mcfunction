@@ -1,3 +1,5 @@
+### If more input modes are added then alter this
+
 # Get Input Length
 function ttb:states/stages/2_idle/control/input/set/set_paste_input
 execute store result score inputLength StampCharParse run data get storage minecraft:stamp input

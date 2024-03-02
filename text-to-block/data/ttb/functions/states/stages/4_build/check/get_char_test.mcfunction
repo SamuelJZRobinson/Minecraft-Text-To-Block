@@ -1,0 +1,1 @@
+$data modify storage minecraft:stamp charTest set from storage minecraft:stamp charset[$(charID)]
