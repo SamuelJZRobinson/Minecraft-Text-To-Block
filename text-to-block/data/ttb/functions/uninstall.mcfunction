@@ -2,7 +2,7 @@
 clear @a written_book{stampControl:1b}
 
 # Clear Teams
-kill @e[type=minecraft:armor_stand,team=Stamp]
+kill @e[type=minecraft:armor_stand,team=Stamp,tag=stamp]
 team remove Stamp
 
 # Clear Data
