@@ -1,5 +1,5 @@
 # Alert
-tellraw @a [{"text":"☠ ","color":"red"},{"nbt":"message","storage":"messages","color":"red"}]
+$tellraw @a [{"text":"☠ ","color":"red"},{"text":"$(message)","color":"red"}]
 function ttb:sounds/error
 
 # Set Scores

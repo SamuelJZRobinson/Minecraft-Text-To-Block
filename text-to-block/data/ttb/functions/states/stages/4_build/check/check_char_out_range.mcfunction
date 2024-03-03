@@ -1,6 +1,5 @@
 # Warning
-data modify storage minecraft:messages message set value "Incompatible char."
-function ttb:error_handling/raise_warning
+function ttb:error_handling/raise_warning {message:"Cannot place, char incompatible!"}
 
 # Remove Input Char
 data remove storage minecraft:stamp input[0]

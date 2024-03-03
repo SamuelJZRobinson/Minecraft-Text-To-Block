@@ -21,5 +21,4 @@ execute if score fontAxis StampSettings matches 1 run
     # Could kill script or wait until manual approval to try again?
 
 # Exception
-execute if score stampExists StampStatus matches 1 run data modify storage messages message set value "Cannot reset, stamp exists!"
-execute if score stampExists StampStatus matches 1 run function ttb:error_handling/raise_warning
+execute if score stampExists StampStatus matches 1 run function ttb:error_handling/raise_warning {message:"Cannot reset, stamp exists!"}
