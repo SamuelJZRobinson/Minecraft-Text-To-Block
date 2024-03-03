@@ -1,3 +1,5 @@
+### Old
+
 # Notes
   # charID equals n-1 of charsetLength measured only with <.
   # Do not set bool to 0 here as the script will execute both paths.

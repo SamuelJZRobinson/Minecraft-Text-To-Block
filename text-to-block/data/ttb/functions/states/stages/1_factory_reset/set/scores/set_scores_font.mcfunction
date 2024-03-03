@@ -10,7 +10,6 @@ scoreboard players set charsetsEnabled StampFont 0
   scoreboard players set charHeightMod StampFont 0
   # Width
   scoreboard players set charWidth StampFont 0
-  scoreboard players set charGenericWidth StampFont 0
   scoreboard players set charWidthtMod StampFont 0
 # Declare Subsets
 scoreboard players set doSymbols StampFont 0

@@ -6,10 +6,10 @@
   # West        90     -X      +Z
 
 # Place Structure
-setblock ^ ^ ^1 structure_block{posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD",ignoreEntities:1b} replace
+setblock ~ ~ ~ structure_block{posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD",ignoreEntities:1b} replace
 
 # Set Char
-$data merge block ^ ^ ^1 {name:"minecraft:fonts/$(font)/$(axis)/$(subset)/$(char)"}
+$data merge block ~ ~ ~ {name:"minecraft:fonts/$(font)/$(axis)/$(subset)/$(char)"}
 
 # Set Direction
   # North
@@ -22,5 +22,11 @@ $data merge block ^ ^ ^1 {name:"minecraft:fonts/$(font)/$(axis)/$(subset)/$(char
   execute if score yaw StampStatus matches 90 run function ttb:states/stages/4_build/place/structure/set_west
 
 # Activate
-setblock ^ ^1 ^1 redstone_block
-setblock ^ ^1 ^1 air
+setblock ~ ~1 ~ redstone_block
+
+# Clear
+setblock ~ ~1 ~ air
+setblock ~ ~ ~ air
+
+# Set Flags
+scoreboard players set descend StampFlags 0

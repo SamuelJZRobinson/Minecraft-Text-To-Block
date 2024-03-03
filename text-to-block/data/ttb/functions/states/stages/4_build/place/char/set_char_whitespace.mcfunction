@@ -1,1 +1,0 @@
-# execute if score charID StampFont matches 2 run flag whitespace

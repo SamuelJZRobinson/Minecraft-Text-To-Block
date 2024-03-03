@@ -14,3 +14,6 @@ scoreboard players operation newlineHeight StampFont *= lineCount StampStatus
 # Move entity in direction of arrow relative to its eyeline
 execute if score fontAxis StampSettings matches 0 run function ttb:states/stages/4_build/place/move/move_newline_horizontal
 execute if score fontAxis StampSettings matches 1 run function ttb:states/stages/4_build/place/move/move_newline_vertical
+
+# Set Flags
+scoreboard players set newline StampFlags 0
