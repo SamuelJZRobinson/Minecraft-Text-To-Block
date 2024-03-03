@@ -1,5 +1,5 @@
 # Height
-scoreboard players set charCapHeight StampFont 4
+scoreboard players set charCapHeight StampFont 5
 scoreboard players set charDescenderHeight StampFont 2
 
 ### How is doSubset implemented?

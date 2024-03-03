@@ -1,6 +1,9 @@
 # Get Char Dimensions
 function ttb:states/stages/4_build/place/char/get_char_dimensions with storage minecraft:stamp filePath
 
+# Get Char Flags
+function ttb:states/stages/4_build/place/char/get_char_flags
+
 # Place Structure
 function ttb:states/stages/4_build/place/char/manage_set_char
 execute if score charID StampFont matches 3.. at @e[type=armor_stand,tag=stamp,team=Stamp] run function ttb:states/stages/4_build/place/structure/place_structure with storage minecraft:stamp filePath

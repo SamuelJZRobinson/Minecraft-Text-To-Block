@@ -1,8 +1,6 @@
 # Set Score
 scoreboard players set testsFailed Exception 0
 
-### Ensure all input is validated, values are in range
-
 # Get Input
 function ttb:states/stages/2_idle/control/input/set/set_paste_input
 

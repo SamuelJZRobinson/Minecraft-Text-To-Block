@@ -4,7 +4,6 @@ data modify block ~ ~ ~ rotation set value "NONE"
 # Set Descend Offset
 scoreboard players set charHeightMod StampFont 0
 scoreboard players operation charHeightMod StampFont -= charCapHeight StampFont
-scoreboard players remove charHeightMod StampFont 1
 execute if score descend StampFlags matches 1 run scoreboard players operation charHeightMod StampFont -= charDescenderHeight StampFont
 execute store result block ~ ~ ~ posZ int 1 run scoreboard players get charHeightMod StampFont
 

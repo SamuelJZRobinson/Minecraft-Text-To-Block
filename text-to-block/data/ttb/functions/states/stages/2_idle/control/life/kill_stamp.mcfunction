@@ -1,5 +1,7 @@
-# Kill
+# Goto Location
 execute unless entity @e[type=minecraft:armor_stand,team=Stamp,tag=stamp] run function ttb:states/stages/2_idle/control/move/tp_goto
+
+# Kill
 kill @e[type=minecraft:armor_stand,team=Stamp,tag=stamp]
 
 # Set Scores

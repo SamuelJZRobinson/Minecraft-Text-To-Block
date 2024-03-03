@@ -1,5 +1,8 @@
-# Add Spacing
+# Add Char Spacing
 scoreboard players operation charWidth StampFont += CHAR_SPACING StampSettings
+
+# Increment
+scoreboard players operation lineDistance StampStatus += charWidth StampFont
 
 # Move Right
 execute store result storage minecraft:tp coords.x int 1 run scoreboard players get charWidth StampFont

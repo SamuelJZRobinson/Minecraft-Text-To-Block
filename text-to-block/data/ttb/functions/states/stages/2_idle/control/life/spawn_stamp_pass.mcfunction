@@ -3,7 +3,7 @@ execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~ ~ ~ {Tea
 execute as @e[type=armor_stand,team=Stamp,tag=stamp,limit=1] store result entity @s Rotation[0] float 1 run scoreboard players get yaw StampStatus
 
 # Get Coords
-execute as @e[type=armor_stand,team=Stamp,limit=1] run function ttb:states/stages/2_idle/control/move/set_init_coords
+execute as @e[type=armor_stand,team=Stamp,limit=1] run function ttb:utility/tp/set_init_coords
 
 # Set Score
 scoreboard players set stampExists StampStatus 1
