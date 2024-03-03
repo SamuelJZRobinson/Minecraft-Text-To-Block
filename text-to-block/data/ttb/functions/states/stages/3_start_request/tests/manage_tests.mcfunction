@@ -3,6 +3,9 @@ scoreboard players set testsFailed Exception 0
 
 ### Ensure all input is validated, values are in range
 
+# Get Input
+function ttb:states/stages/2_idle/control/input/set/set_paste_input
+
 # Test List
 function ttb:states/stages/3_start_request/tests/test_not_started
 execute if score testsFailed Exception matches 0 run function ttb:states/stages/3_start_request/tests/test_stamp_exists

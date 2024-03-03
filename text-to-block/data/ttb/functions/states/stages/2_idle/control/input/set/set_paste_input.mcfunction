@@ -1,7 +1,7 @@
 # Notes
   # fontAxes include: horizontal (0) and vertical (1)
 
-# Input
+# Input Array
 data modify storage minecraft:stamp input set value [H,e,l,l,o,' ',W,o,r,l,d,'!']
 
 # Font

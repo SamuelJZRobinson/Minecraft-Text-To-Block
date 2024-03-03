@@ -1,17 +1,12 @@
 # Stamp
+data remove storage minecraft:stamp charset
 data remove storage minecraft:stamp input
+data remove storage minecraft:stamp charTest
+data remove storage minecraft:stamp charID
+data remove storage minecraft:stamp filePath
 
-# Charpase
-# data remove storage minecraft:StampFont check
-# data remove storage minecraft:StampFont checkcopy
-# Charset
-### data remove storage minecraft:charset other
-### data remove storage minecraft:charset uppercase
-#### data remove storage minecraft:charset lowercase
-#### data remove storage minecraft:charset numbers
-#### data remove storage minecraft:charset symbols
-# CharsetUnique
-# data remove storage minecraft:charsetunique charset
-# data remove storage minecraft:charsetunique charsettest
+# TP
+data remove storage minecraft:tp coords
+
 # Messages
 data remove storage minecraft:messages message

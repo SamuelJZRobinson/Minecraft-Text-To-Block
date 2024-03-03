@@ -1,4 +1,4 @@
-# Stamp
+# STAMP
 team add Stamp "Stamp"
 team modify Stamp collisionRule never
 team modify Stamp color gray
