@@ -1,6 +1,7 @@
 # Width
   # 3
-  execute if score charID StampFont matches 53 run scoreboard players set charWidth StampFont 3
+  execute if score charID StampFont matches 53..54 run scoreboard players set charWidth StampFont 3
+  execute if score charID StampFont matches 56 run scoreboard players set charWidth StampFont 3
   execute if score charID StampFont matches 64 run scoreboard players set charWidth StampFont 3
   execute if score charID StampFont matches 69 run scoreboard players set charWidth StampFont 3
   # 4

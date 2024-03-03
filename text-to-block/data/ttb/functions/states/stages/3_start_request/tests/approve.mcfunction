@@ -1,6 +1,7 @@
 # Set Score
 scoreboard players set started StampStatus 1
 scoreboard players set lineCount StampStatus 1
+scoreboard players set lineDistance StampStatus 0
 
 # Align (h or v)
 execute if score fontAxis StampSettings matches 0 run data modify storage minecraft:stamp filePath.axis set value "h"

@@ -15,6 +15,7 @@ execute if score fontAxis StampSettings matches 0 run function ttb:states/stages
 
 # Set Flags
 scoreboard players set newline StampFlags 0
+scoreboard players set preNewline StampFlags 1
 
 # Increment
 scoreboard players add lineCount StampStatus 1
