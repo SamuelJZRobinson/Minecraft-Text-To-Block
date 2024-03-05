@@ -1,5 +1,6 @@
 # Notes
-  # Structures in the southern direction allow perfect axis flipping.
+  # Structures in the southern direction allow perfect axis measurement flipping.
+  # Unforuntaley flipping the file path axis dynamically is too complicated for Minecraft.
 
 # Get Data
   # Pos

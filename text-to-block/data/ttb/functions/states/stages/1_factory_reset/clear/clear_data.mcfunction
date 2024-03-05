@@ -8,5 +8,8 @@ data remove storage minecraft:stamp filePath
 # TP
 data remove storage minecraft:tp coords
 
+# checkCollision
+data remove storage minecraft:stamp checkCollisions
+
 # Messages
 data remove storage minecraft:messages message
