@@ -4,4 +4,4 @@
 tellraw @a "state 4"
 
 # Call Protocols
-function ttb:states/stages/4_build/tests/manage_tests
+schedule function ttb:states/stages/4_build/tests/manage_tests 1t replace

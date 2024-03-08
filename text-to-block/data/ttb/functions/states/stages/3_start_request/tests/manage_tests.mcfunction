@@ -12,5 +12,5 @@ execute if score testsFailed Exception matches 0 run function ttb:states/stages/
 execute if score testsFailed Exception matches 0 run function ttb:states/stages/3_start_request/tests/test_input_not_empty
 
 # Outcome
-execute if score testsFailed Exception matches 1 run function ttb:states/stages/3_start_request/tests/reject
-execute if score testsFailed Exception matches 0 run function ttb:states/stages/3_start_request/tests/approve
+execute if score testsFailed Exception matches 1 run schedule function ttb:states/stages/3_start_request/tests/reject 1t replace
+execute if score testsFailed Exception matches 0 run schedule function ttb:states/stages/3_start_request/tests/approve 1t replace
