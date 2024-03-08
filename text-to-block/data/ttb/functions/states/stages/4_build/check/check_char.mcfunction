@@ -10,7 +10,7 @@ execute store success score noCharMatch StampFont run data modify storage minecr
 
 # Success
 ### Remove when script works properly to avoid danger
-execute if score noCharMatch StampFont matches 0 run schedule function ttb:states/stages/4_build/place/manage_place_char 1t replace
+execute if score noCharMatch StampFont matches 0 run function ttb:states/stages/4_build/place/manage_place_char
 
 # Out of Range
 execute if score noCharMatch StampFont matches 1 if score charID StampFont >= MAX_CHAR_ID StampFont run function ttb:states/stages/4_build/check/check_char_out_range
