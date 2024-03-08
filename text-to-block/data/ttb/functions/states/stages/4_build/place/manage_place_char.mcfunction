@@ -1,6 +1,8 @@
 # Notes
   # When a newline occurs then one instance of a space creating char is ignored to maintain text alignment.
 
+tellraw @a "pass"
+
 # Get Char Dimensions
 function ttb:states/stages/4_build/place/char/get_char_dimensions with storage minecraft:stamp filePath
 

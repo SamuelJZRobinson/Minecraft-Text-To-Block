@@ -9,7 +9,7 @@
 # data modify storage minecraft:stamp input set value ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 # data modify storage minecraft:stamp input set value [ 'T', 'h', 'e', ' ', 'q', 'u', 'i', 'c', 'k', ' ', 'b', 'r', 'o', 'w', 'n', ' ', 'f', 'o', 'x', ' ', 'j', 'u', 'm', 'p', 's', ' ', 'o', 'v', 'e', 'r', ' ', 't', 'h', 'e', ' ', 'l', 'a', 'z', 'y', ' ', 'd', 'o', 'g', '.' ]
 # data modify storage minecraft:stamp input set value [ 'T', 'h', 'e', ' ', 'q', 'u', 'i', 'c', 'k']
-# data modify storage minecraft:stamp input set value ['►']
+data modify storage minecraft:stamp input set value ['ã','ã','ã','ã']
 
 # Font
 data modify storage minecraft:stamp filePath.font set value "pixel"
