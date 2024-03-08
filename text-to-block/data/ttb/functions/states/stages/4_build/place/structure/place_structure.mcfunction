@@ -2,8 +2,8 @@
   # Direction   Yaw    Front   Left-Align
   # North       180    -Z      -X
   # East        270    +X      -Z
-  # South       0      +Z      +X
-  # West        90     -X      +Z
+  # South         0    +Z      +X
+  # West         90    -X      +Z
   # Descend application is swapped for the vertical axis to ensure chars stay within the particle area.
 
 # Place Structure
