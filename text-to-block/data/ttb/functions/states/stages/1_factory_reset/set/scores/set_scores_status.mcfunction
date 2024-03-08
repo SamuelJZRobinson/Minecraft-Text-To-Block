@@ -14,4 +14,3 @@ scoreboard players set lineDistance StampStatus 0
 scoreboard players set newlineHeight StampStatus 0
 # Utility
 scoreboard players set NEGATIVE_FLIP StampStatus -1
-scoreboard players set HALF StampStatus 2

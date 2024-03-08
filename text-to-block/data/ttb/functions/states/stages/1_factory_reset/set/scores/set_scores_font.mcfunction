@@ -14,11 +14,9 @@ scoreboard players set doLowercases StampFont 0
   scoreboard players set charDescenderHeight StampFont 0
   scoreboard players set charTotalHeight StampFont 0
   scoreboard players set charHeightMod StampFont 0
-  scoreboard players set checkCollisionHeight StampFont 0
   # Width
   scoreboard players set charWidth StampFont 0
   scoreboard players set charWidthMod StampFont 0
-  scoreboard players set checkCollisionWidth StampFont 0
 # Char Parse
 scoreboard players set MAX_CHAR_ID StampFont 0
 scoreboard players set charID StampFont 0
