@@ -10,8 +10,8 @@ scoreboard players operation newlineHeight StampStatus += lineHeight StampSettin
 scoreboard players operation newlineHeight StampStatus *= lineCount StampStatus
 
 # Move Forward Or Down
-execute if score fontAxis StampSettings matches 0 run function ttb:states/stages/4_build/place/move/move_newline_horizontal
-# execute if score fontAxis StampSettings matches 1 run function ttb:states/stages/4_build/place/move/move_newline_vertical
+execute if score fontAxis StampSettings matches 0 run function ttb:states/stages/4_build/place/move/move_newline_h
+execute if score fontAxis StampSettings matches 1 run function ttb:states/stages/4_build/place/move/move_newline_v
 
 # Set Flags
 scoreboard players set newline StampFlags 0
