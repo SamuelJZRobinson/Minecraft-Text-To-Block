@@ -39,3 +39,5 @@
 
 # Current Limitations
   # Words are split when performing a newline.
+  # Cannot detection collisions.
+  # Cannot cleanup blocks after placing them.
