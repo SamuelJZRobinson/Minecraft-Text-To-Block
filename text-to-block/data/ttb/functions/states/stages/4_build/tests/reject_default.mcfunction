@@ -1,5 +1,3 @@
-tellraw @a "Default exit"
-
 # Set Scores
 scoreboard players set started StampStatus 0
 scoreboard players set testsFailed Exception 0

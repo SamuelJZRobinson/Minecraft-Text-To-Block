@@ -17,3 +17,6 @@
   # Size
   data modify block ~ ~-1 ~ sizeY set from storage minecraft:temp structure.sizeZ
   data modify block ~ ~-1 ~ sizeZ set from storage minecraft:temp structure.sizeY
+
+# Status
+tellraw @s "Flipped structure block axis"

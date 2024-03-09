@@ -1,22 +1,42 @@
-### Old
+# Notes
+  # Possible characters: /function ttb:fonts/char_id_guide
+  # Symbol labels: /function ttb:states/stages/4_build/place/char/set_char_symbols
 
-# Custom Font Instructions
-  # Validation
-    # Admittedly I have not tried this with larger or smaller fonts so this is experimental.
-    # It's advised to write all names in lowercase to avoid confusion.
-    # Dimensions are in blocks.
-    # Fonts must declare at least 1 charset.
-    # Only set character widths for used charsets.
-    # All dimensions and widths must equal 1 or more.
-    # Do not rearrange or modify commands without explicit instructions.
-    # For correct placements each structure selection must go from the descender or baseline to the cap height.
-  # Steps
-    # 1) Open <map>/generated/minecraft/structures/fonts and create a custom named folder beside pixel.
-    # 2) Insert folders named uppercases, lowercases, numbers, symbols, and mandatory.
-    # 3) Duplicate the ttb:fonts/pixel template folder and give it the same unique name.
-    # 4) Open ttb:fonts/pixel/head (this script) and declare what charsets the font will display with 1 (true) or 0 (false).
-    # 5) Save required character structures in <map>/generated/minecraft/structures/fonts/<font>.
-    # 6) Adjust general dimensions and individual character widths. Consider saving time by setting the same character widths to avgWidth.
-    # 7) Open all group scripts in ttb:fonts/<font>/call/ and replace pixel references with a custom name using CTRL + H. It may help deleting unnecessary checks.
-    # 8) Open ttb:fonts/get_font_info and reference the new fontID by incrementing it one higher than the previous ID.
-    # 9) Open ttb:fonts/measurement/get_font and reference the new fontID.
+# 1) Decide What Subsets To Build:
+  # In function ttb:fonts/<font>/get_font set what character subsets you want to support including:
+    # Symbols (e.g., !@#$).
+    # Numbers (e.g., 0123).
+    # Uppercases (e.g., ABCD).
+    # Lowercases (e.g., abcd).
+  # Disabled subsets are ignored and treated like an incompatible character.
+  # At least one subset must be enabled for the stamp to work.
+
+# 2) Save Character Schematics:
+  # Structure blocks demand lowercase letters for file path names.
+  # Save subset characters with structure blocks using the file path "minecraft:fonts/<font>/<axis>/<subset>/<char>"
+    # Font: custom name.
+    # Axis: h, v.
+    # Subset: s, n, uc, lc.
+    # Char: letter or explict label.
+
+# 3) Flip Schematic Axis Measurements:
+  # Unfortunately structure blocks cannot flip on the vertical axis so it's necessary to:
+    # Swap axis measurements.
+    # Manually adjust each file path axis (i.e., /h /v).
+  # To save time flipping axis measurements:
+    # Build structures facing south.
+    # Place structure blocks in the bottom right corner of each character.
+    # Flip structures with World Edit and simply change the file path.
+    # Get the flip axis tool with /function ttb:utility/axis/give_flip_axis_tool
+    # Stand on top of each structure block being changed.
+      # South builds and the bottom right corner allow the flip axis tool to swap between axis measurements instantly.
+
+# 4) Set Character Dimensions
+  # Measurement guide signs: left of character schematics.
+  # In /function ttb:fonts/pixel/get/get_dimensions set default dimensions:
+    # charCapHeight is distance of the baseline to the top.
+    # charDescenderHeight is the distance below the baseline to the bottom.
+    # charWidth in this case is the average character width.
+  # For all /function ttb:fonts/pixel/set/set_<subset>
+    # Any character diffirent from the average character width must be overwritten.
+    # Any character that moves down (i.e., g, p, q) must set the descend flag.

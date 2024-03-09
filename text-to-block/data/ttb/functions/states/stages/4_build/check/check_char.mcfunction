@@ -10,7 +10,6 @@ function ttb:states/stages/4_build/check/get_char_test with storage minecraft:st
 execute if score charID StampFont < MAX_CHAR_ID StampFont store success score noCharMatch StampFont run data modify storage minecraft:stamp charTest set from storage minecraft:stamp input[0]
 
 # Success
-### Remove when script works properly to avoid danger
 execute if score noCharMatch StampFont matches 0 run function ttb:states/stages/4_build/place/manage_place_char
 
 # Out of Range

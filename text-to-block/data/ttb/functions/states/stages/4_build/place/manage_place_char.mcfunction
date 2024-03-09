@@ -1,8 +1,6 @@
 # Notes
   # When a newline occurs then one instance of a space creating char is ignored to maintain text alignment.
 
-tellraw @a "pass"
-
 # Get Char Dimensions
 function ttb:states/stages/4_build/place/char/get_char_dimensions with storage minecraft:stamp filePath
 
@@ -13,7 +11,7 @@ function ttb:states/stages/4_build/place/char/get_char_flags
 function ttb:states/stages/4_build/place/char/manage_set_char
 execute if score charID StampFont matches 3.. at @e[type=armor_stand,tag=stamp,team=Stamp] run function ttb:states/stages/4_build/place/structure/place_structure with storage minecraft:stamp filePath
 
-### If char whitespace and next few chars is imminent newline then do it early to preserve word, genericWidth is easiest predictor
+### If char whitespace and next few chars is imminent newline then clone last white space pos to current pos onto a newline.
 
 # Move Char Width
   # Default

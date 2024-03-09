@@ -1,5 +1,3 @@
-### Still need a way to skip subsets if they are disabled
-
 # Set Scores
   # Char Parse
   scoreboard players set charID StampFont 0

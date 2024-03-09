@@ -1,7 +1,6 @@
 # Notes
-  ### When modifying the list it's necessary to update ttb:fonts/confirm_font, ttb:fonts/<font>/*, ttb:check/set_char_has_input, ttb:check/no_match
-  # Starting charID at 0 enables directly mapping to array index searches.
   # Based on ASCII.
+  # charID directly corresponds to testChar array indexing.
 
 # Char    ID
 

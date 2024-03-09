@@ -1,5 +1,3 @@
-tellraw @a "Try again"
-
 # Set Scores
 scoreboard players set testsFailed Exception 0
 

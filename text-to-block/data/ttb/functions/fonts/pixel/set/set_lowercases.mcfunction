@@ -14,6 +14,6 @@
   execute if score charID StampFont matches 83 run scoreboard players set charWidth StampFont 5
   execute if score charID StampFont matches 92..93 run scoreboard players set charWidth StampFont 5
 
-# Descender
+# Descend
 execute if score charID StampFont matches 77 run scoreboard players set descend StampFlags 1
 execute if score charID StampFont matches 86..87 run scoreboard players set descend StampFlags 1
