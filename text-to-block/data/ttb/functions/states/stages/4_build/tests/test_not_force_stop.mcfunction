@@ -1,0 +1,1 @@
+execute if score forceStop StampFlags matches 1 run function ttb:error_handling/raise_warning {message:"Force stopped stamp!"}

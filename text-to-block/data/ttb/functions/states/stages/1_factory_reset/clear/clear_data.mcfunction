@@ -10,3 +10,6 @@ data remove storage minecraft:tp coords
 
 # Messages
 data remove storage minecraft:messages message
+
+# Temp
+data remove storage minecraft:temp structure

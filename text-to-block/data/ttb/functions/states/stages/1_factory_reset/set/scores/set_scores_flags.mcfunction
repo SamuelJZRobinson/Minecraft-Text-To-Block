@@ -6,3 +6,5 @@ scoreboard players set newline StampFlags 0
 scoreboard players set preNewline StampFlags 0
 # Width
 scoreboard players set tab StampFlags 0
+# Stop
+scoreboard players set forceStop StampFlags 0

@@ -14,6 +14,7 @@ scoreboard objectives remove StampStatus
 scoreboard objectives remove StampSettings
 scoreboard objectives remove StampFont
 scoreboard objectives remove StampFlags
+scoreboard objectives remove StampUseCarrotStick
 
 # Status
 tellraw @a [{"text":"Text To Block ","bold":true,"color": "gold"},{"text":"datapack uninstalled!","bold":false,"color": "white"}]
