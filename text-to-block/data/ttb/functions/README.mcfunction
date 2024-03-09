@@ -38,7 +38,9 @@
   # Guide for preparing custom fonts: /function ttb:fonts/custom_font_guide
 
 # Current Limitations
-  # Words are split when performing a newline.
+  # When creating new custom fonts since structure blocks cannot flip on the vertical axis it's necessary to swap axis measurements and manually adjust each file path axis (i.e., /h /v).
+  # Text Input is currently limited to typing arrays (JavaScript code is provided for convenience).
   # Cannot detect collisions.
   # Cannot cleanup blocks after placing them.
   # Text is always right aligned.
+  # Words are split when performing a newline.
