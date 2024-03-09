@@ -3,11 +3,13 @@
     # 1) Clicking the give controller chat request when performing a factory reset.
     # 2) Typing /function ttb:states/stages/2_idle/control/give_controller
   # Stamp commands are temporarily disabled while the program runs successfully.
+  # Stamp always clones characters 1 block in front of it and to the right.
   # The controller allows multiple users to interact with each copy.
 
 # Commands
   # Main:
     # Start: clones characters given the input is not empty and they are compatible with the custom font.
+    # Force Stop: halts the stamp process and opens the error chat menu to try again or restart.
     # Uninstall: remove any trace of the datapack including written books, scoreboards, and armour stands.
   # Stamp:
     # Spawn: place the stamp armour stand, only one is allowed at any time.
