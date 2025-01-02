@@ -1,3 +1,3 @@
 {
-  "values":["ttb:states/1_factory_reset/init_state","ttb:loops/idle/idle_loop_8t"]
+  "values":["ttb:states/1_factory_reset/init_state","ttb:loops/loop_5t"]
 }

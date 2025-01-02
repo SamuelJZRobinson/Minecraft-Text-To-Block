@@ -6,4 +6,4 @@ execute as @a[scores={StampUseCarrotStick=1..},nbt={SelectedItem:{id:"minecraft:
 execute as @a run scoreboard players reset @s StampUseCarrotStick
 
 # Loop
-schedule function ttb:loops/idle/idle_loop_8t 8t replace
+schedule function ttb:loops/loop_5t 5t replace
