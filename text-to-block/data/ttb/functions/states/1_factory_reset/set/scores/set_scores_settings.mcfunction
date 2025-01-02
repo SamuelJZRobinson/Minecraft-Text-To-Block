@@ -1,4 +1,4 @@
-# STAMP SETTINGS
+# Objective
 scoreboard objectives add StampSettings dummy {"bold":true,"color":"white","text":"Stamp Settings"}
 # Constants
 scoreboard players set CHAR_SPACING StampSettings 1

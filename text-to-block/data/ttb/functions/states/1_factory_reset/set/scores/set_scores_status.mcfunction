@@ -1,4 +1,4 @@
-# STAMP STATUS
+# Objective
 scoreboard objectives add StampStatus dummy {"bold":true,"color":"white","text":"Stamp Status"}
 # State
 scoreboard players set started StampStatus 0

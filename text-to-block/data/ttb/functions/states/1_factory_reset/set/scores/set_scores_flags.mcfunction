@@ -1,4 +1,4 @@
-# FLAGS
+# Objective
 scoreboard objectives add StampFlags dummy {"bold":true,"color":"white","text":"Stamp Flags"}
 # Height
 scoreboard players set descend StampFlags 0

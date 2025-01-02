@@ -1,4 +1,4 @@
-# STAMP FONT
+# Objective
 scoreboard objectives add StampFont dummy {"bold":true,"color":"white","text":"Stamp Font"}
 # Error Handling
 scoreboard players set fontExists StampFont 0
