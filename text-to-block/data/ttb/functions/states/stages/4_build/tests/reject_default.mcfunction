@@ -10,4 +10,4 @@ execute as @e[type=armor_stand,team=Stamp,limit=1] run function ttb:utility/tp/s
 
 # Set State
 scoreboard players set state StampStatus 2
-schedule function ttb:states/stages/manage_states 1t replace
+schedule function ttb:states/manage_states 1t replace

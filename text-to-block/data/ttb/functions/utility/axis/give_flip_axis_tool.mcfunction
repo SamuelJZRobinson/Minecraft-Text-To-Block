@@ -1,1 +1,1 @@
-give @p carrot_on_a_stick{display:{Name:'{"text":"Flip Structure Block Axis"}',Lore:['{"text":"Stand on structure block"}','{"text":"Swap horizontal and vertical measurements"}']},hToVAxis:1b} 1
+give @p carrot_on_a_stick[custom_name='{"text":"Flip Structure Block Axis"}',lore=['{"text":"Stand on structure block"}','{"text":"Swap horizontal and vertical measurements"}'],custom_data={hToVAxis:1b}] 1

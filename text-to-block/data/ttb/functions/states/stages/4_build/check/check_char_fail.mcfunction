@@ -16,4 +16,4 @@ scoreboard players add charID StampFont 1
   execute if score doLowercases StampFont matches 0 if score charID StampFont matches 71..96 run scoreboard players operation charID StampFont = MAX_CHAR_ID StampFont
 
 # Continue
-function ttb:states/stages/4_build/check/check_char
+function ttb:states/4_build/check/check_char

@@ -5,4 +5,4 @@ scoreboard players set testsFailed Exception 0
 scoreboard players set forceStop StampFlags 0
 
 # Try Test Again
-function ttb:states/stages/4_build/tests/manage_tests
+function ttb:states/4_build/tests/manage_tests

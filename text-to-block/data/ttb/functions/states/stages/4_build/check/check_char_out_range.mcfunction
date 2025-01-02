@@ -5,4 +5,4 @@ function ttb:error_handling/raise_warning {message:"Cannot place, char incompati
 data remove storage minecraft:stamp input[0]
 
 # Restart Cycle
-function ttb:states/stages/4_build/tests/manage_tests
+function ttb:states/4_build/tests/manage_tests

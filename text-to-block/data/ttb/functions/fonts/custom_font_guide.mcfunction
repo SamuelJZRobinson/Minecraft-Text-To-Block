@@ -1,6 +1,6 @@
 # Notes
   # Possible characters: /function ttb:fonts/char_id_guide
-  # Symbol labels: /function ttb:states/stages/4_build/place/char/set_char_symbols
+  # Symbol labels: /function ttb:states/4_build/place/char/set_char_symbols
 
 # 1) Decide What Subsets To Build:
   # In function ttb:fonts/<font>/get_font set what character subsets you want to support including:

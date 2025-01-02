@@ -1,5 +1,5 @@
 # Goto Location
-execute if score state StampStatus matches 2 unless entity @e[type=minecraft:armor_stand,team=Stamp,tag=stamp] run function ttb:states/stages/2_idle/control/move/tp_goto
+execute if score state StampStatus matches 2 unless entity @e[type=minecraft:armor_stand,team=Stamp,tag=stamp] run function ttb:states/2_idle/control/move/tp_goto
 
 # Kill
 execute if score state StampStatus matches 2 run kill @e[type=minecraft:armor_stand,team=Stamp,tag=stamp]

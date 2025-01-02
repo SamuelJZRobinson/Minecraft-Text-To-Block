@@ -21,7 +21,7 @@ const chars = Array.from("Hello world!");
 
 const escapedChars = chars.map(escapeSpecialChars);
 console.log(`['${escapedChars.join("','")}']`);
-  # 3) Copy the output into /function ttb:states/stages/2_idle/control/input/set/set_paste_input.
+  # 3) Copy the output into /function ttb:states/2_idle/control/input/set/set_paste_input.
 
 # Input Examples:
   # Standard:

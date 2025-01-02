@@ -1,7 +1,7 @@
 # Book Controller
   # Use the stamp control book to issue commands, obtain it by either:
     # 1) Clicking the give controller chat request when performing a factory reset.
-    # 2) Typing /function ttb:states/stages/2_idle/control/give_controller
+    # 2) Typing /function ttb:states/2_idle/control/give_controller
   # Stamp commands are temporarily disabled while the program runs successfully.
   # Stamp always clones characters 1 block in front of it and to the right.
   # The controller allows multiple users to interact with each copy.
@@ -31,8 +31,8 @@
 
 # Paste Input
   # Currently typing arrays are the only way to set input (JavaScript code is provided for convenience)
-  # Set paste input here: /function ttb:states/stages/2_idle/control/input/set/set_paste_input
-  # Guide for preparing paste input: /function ttb:states/stages/2_idle/control/input/set/paste_input_guide
+  # Set paste input here: /function ttb:states/2_idle/control/input/set/set_paste_input
+  # Guide for preparing paste input: /function ttb:states/2_idle/control/input/set/paste_input_guide
 
 # Custom Fonts
   # Guide for preparing custom fonts: /function ttb:fonts/custom_font_guide

@@ -6,7 +6,7 @@ kill @e[type=minecraft:armor_stand,team=Stamp,tag=stamp]
 team remove Stamp
 
 # Clear Data
-function ttb:states/stages/1_factory_reset/clear/clear_data
+function ttb:states/1_factory_reset/clear/clear_data
 
 # Clear Scores
 scoreboard objectives remove Exception
