@@ -11,4 +11,4 @@ execute if score state StampStatus matches 2 run scoreboard players set yPosInit
 execute if score state StampStatus matches 2 run scoreboard players set zPosInit StampStatus 0
 
 # Warning
-execute if score state StampStatus matches 3.. run function ttb:error_handling/raise_warning {message:"Cannot kill, already started!"}
+execute if score state StampStatus matches 3.. run function ttb:utility/exceptions/raise_warning {message:"Cannot kill, already started!"}

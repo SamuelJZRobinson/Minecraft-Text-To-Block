@@ -9,4 +9,4 @@ execute if score fontExists StampFont matches ..-1 run scoreboard players set fo
 execute if score fontExists StampFont matches 2.. run scoreboard players set fontExists StampFont 1
 
 # Warning
-execute if score fontExists StampFont matches 0 run function ttb:error_handling/raise_warning {message:"Cannot start, unknown font name!"}
+execute if score fontExists StampFont matches 0 run function ttb:utility/exceptions/raise_warning {message:"Cannot start, unknown font name!"}

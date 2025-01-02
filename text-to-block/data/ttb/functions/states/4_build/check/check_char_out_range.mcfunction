@@ -1,5 +1,5 @@
 # Warning
-function ttb:error_handling/raise_warning {message:"Cannot place, char incompatible!"}
+function ttb:utility/exceptions/raise_warning {message:"Cannot place, char incompatible!"}
 
 # Remove Input Char
 data remove storage minecraft:stamp input[0]

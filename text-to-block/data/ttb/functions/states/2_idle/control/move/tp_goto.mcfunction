@@ -7,5 +7,5 @@ execute if score state StampStatus matches 2 if score stampExists StampStatus ma
 execute if score state StampStatus matches 2 if score stampExists StampStatus matches 1 run function ttb:utility/tp/tp_absolute with storage minecraft:tp coords
 
 # Warning
-execute if score state StampStatus matches 2 if score stampExists StampStatus matches 0 run function ttb:error_handling/raise_warning {message:"Cannot goto, need stamp!"}
-execute if score state StampStatus matches 3.. run function ttb:error_handling/raise_warning {message:"Cannot goto, already started!"}
+execute if score state StampStatus matches 2 if score stampExists StampStatus matches 0 run function ttb:utility/exceptions/raise_warning {message:"Cannot goto, need stamp!"}
+execute if score state StampStatus matches 3.. run function ttb:utility/exceptions/raise_warning {message:"Cannot goto, already started!"}

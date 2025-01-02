@@ -1,1 +1,1 @@
-execute if score stampExists StampStatus matches 1 run function ttb:error_handling/raise_warning {message:"Cannot reset, stamp exists!"}
+execute if score stampExists StampStatus matches 1 run function ttb:utility/exceptions/raise_warning {message:"Cannot reset, stamp exists!"}
